@@ -1,0 +1,6 @@
+@use '../abstracts' as *;
+
+body {
+    background-color: var(--clr-bg);
+    transition: background-color .5s;
+}

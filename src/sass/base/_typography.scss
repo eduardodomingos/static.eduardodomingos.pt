@@ -1,0 +1,87 @@
+// Headings ==========================================
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    line-height: var(--lh-headings);
+    letter-spacing: var(--ls-headings);
+}
+
+h1,
+.h1 {
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-bold);
+}
+
+h2,
+.h2 {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+}
+
+h3,
+.h3 {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-semibold);
+}
+
+h4,
+.h4 {
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-semibold);
+}
+
+h5,
+.h5 {
+    font-size: var(--fs-h5);
+    font-weight: var(--fw-semibold);
+}
+
+h6,
+.h6 {
+    font-size: var(--fs-h6);
+    font-weight: var(--fw-medium);
+}
+
+// Paragraphs ==========================================
+p,
+.p3 {
+    font-size: var(--fs-p3);
+    line-height: var(--lh-paragraphs);
+    font-weight: var(--fw-regular);
+    &.p1 {
+        font-size: var(--fs-p1);
+    }
+    &.p2 {
+        font-size: var(--fs-p2);
+    }
+    &.p4 {
+        font-size: var(--fs-p4);
+    }
+}
+
+// Buttons ==========================================
+button,
+.b1 {
+    font-size: var(--fs-b1);
+    line-height: var(--lh-buttons);
+    font-weight: var(--fw-semibold);
+    letter-spacing: var(--ls-buttons);
+    &.b2 {
+        font-size: var(--fs-b2);
+    }
+}
+
+// Labels ==========================================
+label,
+.l1 {
+    font-size: var(--fs-l1);
+    line-height: var(--lh-labels);
+    font-weight: var(--fw-semibold);
+    letter-spacing: var(--ls-labels);
+    &.b2 {
+        font-size: var(--fs-l2);
+    }
+}

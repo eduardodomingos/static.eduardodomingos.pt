@@ -1,0 +1,53 @@
+@use '../abstracts' as *;
+
+:root {
+    // Typography ==========================================
+    --fs-h1: clamp();
+    --fs-h2: clamp();
+    --fs-h3: clamp();
+    --fs-h4: clamp();
+    --fs-h5: clamp();
+    --fs-h5: 1.6rem;
+    --fs-p1: clamp();
+    --fs-p2: clamp();
+    --fs-p3: 1.6rem;
+    --fs-p4: 1.4rem;
+    --fs-b1: 1.6rem;
+    --fs-b2: 1.4rem;
+    --fs-l1: 1.6rem;
+    --fs-l2: 1.4rem;
+
+    --lh-headings: 1.2;
+    --lh-paragraphs: 1.5;
+    --lh-buttons: 1;
+    --lh-labels: 1;
+
+    --ls-headings: -0.02em;
+    --ls-buttons: 0.05em;
+    --ls-labels: 0.05em;
+
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-medium: 500;
+    --fw-regular: 400;
+
+    // Theme ==========================================
+    color-scheme: dark light;
+
+    @media (prefers-color-scheme: dark) {
+        & {
+            @include colors(dark);
+        }
+    }
+
+    &.theme--light {
+        color-scheme: light;
+        @include colors(light);
+    }
+
+    &.theme--dark {
+        color-scheme: dark;
+        @include colors(dark);
+    }
+}
+

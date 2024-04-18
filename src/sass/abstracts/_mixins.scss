@@ -1,0 +1,7 @@
+@use 'colors' as *;
+  
+@mixin colors($key) {
+    @each $prop, $value in map-get($colors, $key) {
+        --clr-#{$prop}: #{$value};
+    }
+}
