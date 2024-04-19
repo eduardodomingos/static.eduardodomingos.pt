@@ -1,0 +1,36 @@
+// Font Sizes 
+// ==========================================
+$font-size-h1: clamp(0,0,0);
+$font-size-h2: clamp(0,0,0);
+$font-size-h3: clamp(0,0,0);
+$font-size-h4: clamp(0,0,0);
+$font-size-h5: clamp(0,0,0);
+$font-size-h6: 1.6rem;
+$font-size-paragraph-xl: clamp(0,0,0);
+$font-size-paragraph-l: clamp(0,0,0);
+$font-size-paragraph-m: 1.6rem;
+$font-size-paragraph-s: 1.4rem;
+$font-size-button-m: 1.6rem;
+$font-size-button-s: 1.4rem;
+$font-size-label-m: 1.6rem;
+$font-size-label-s: 1.4rem;
+
+// Line Heights
+// ==========================================
+$line-height-headings: 1.2;
+$line-height-paragraphs: 1.5;
+$line-height-buttons: 1;
+$line-height-labels: 1;
+
+// Letter Spacings
+// ==========================================
+$letter-spacing-headings: -0.02em;
+$letter-spacing-buttons: 0.05em;
+$letter-spacing-labels: 0.05em;
+
+// Font Weights
+// ==========================================
+$font-weight-bold: 700; 
+$font-weight-semibold: 600;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
