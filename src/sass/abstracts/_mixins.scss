@@ -2,6 +2,12 @@
   
 @mixin colors($key) {
     @each $prop, $value in map-get($colors, $key) {
-        --clr-#{$prop}: #{$value};
+        --color-#{$prop}: #{$value};
     }
+}
+
+@mixin unlist() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

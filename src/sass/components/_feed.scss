@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.feed {
+    @include unlist();
+    a {
+        color: var(--color-text);
+        text-decoration: none;
+    }
+}

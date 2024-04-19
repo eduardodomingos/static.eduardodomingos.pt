@@ -1,6 +1,17 @@
 @use '../abstracts' as *;
 
+html {
+    font-size: 62.5%;
+}
+
 body {
-    background-color: var(--clr-bg);
+    background-color: var(--color-background);
+    color: var(--color-text);
     transition: background-color .5s;
+    font-family: "Public Sans", sans-serif;
+    font-weight: $font-weight-regular;
+}
+
+a {
+    color: var(--color-accent);
 }

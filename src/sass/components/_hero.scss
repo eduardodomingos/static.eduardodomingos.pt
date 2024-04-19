@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.hero {
+    background-color: var(--color-secondary);
+    padding-block: $space-l;
+    .hero__title {
+        margin: $space-stack-m;
+    }
+    .hero__text {
+    }
+}

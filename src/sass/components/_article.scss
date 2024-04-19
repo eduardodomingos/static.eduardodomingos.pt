@@ -1,0 +1,19 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.article {
+    &.article--teaser {
+        .feed & {
+            header {
+                margin: $space-stack-m;
+            }
+            .article__title {
+                @extend %h2;
+            }
+            .article__title--secondary {
+                @extend %h4;
+                margin-top: $space-xs;
+            }
+        }
+    }
+}

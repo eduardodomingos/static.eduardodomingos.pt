@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.section {
+    .section__title {
+        @extend %h6;
+        color: var(--color-accent);
+        text-transform: uppercase;
+        letter-spacing: .02em;
+        margin: $space-stack-l;
+    }
+}

@@ -2,46 +2,52 @@
 
 // Headings
 // ==========================================
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+%h1, h1, .h1,
+%h2, h2, .h2,
+%h3, h3, .h3,
+%h4, h4, .h4,
+%h5, h5, .h5,
+%h6, h6, .h6 {
     line-height: $line-height-headings;
     letter-spacing: $letter-spacing-headings;
 }
 
+%h1,
 h1,
 .h1 {
     font-size: $font-size-h1;
     font-weight: $font-weight-bold;
 }
 
+%h2,
 h2,
 .h2 {
     font-size: $font-size-h2;
     font-weight: $font-weight-bold;
 }
 
+%h3,
 h3,
 .h3 {
     font-size: $font-size-h3;
     font-weight: $font-weight-semibold;
 }
 
+%h4,
 h4,
 .h4 {
     font-size: $font-size-h4;
     font-weight: $font-weight-semibold;
 }
 
+%h5,
 h5,
 .h5 {
     font-size: $font-size-h5;
     font-weight: $font-weight-semibold;
 }
 
+%h6,
 h6,
 .h6 {
     font-size: $font-size-h6;
@@ -50,50 +56,47 @@ h6,
 
 // Paragraphs
 // ==========================================
-p {
-    &,
-    &.paragraph-m {
-        font-size: $font-size-paragraph-m;
-        line-height: $line-height-paragraphs;
-        font-weight: $font-weight-regular;
+p,
+.p3 {
+    font-size: $font-size-p3;
+    line-height: $line-height-paragraphs;
+    font-weight: $font-weight-regular;
+    &.p1 {
+        font-size: $font-size-p1;
     }
-    &.paragraph-xl {
-        font-size: $font-size-paragraph-xl;
+    &.p2 {
+        font-size: $font-size-p2;
     }
-    &.paragraph-l {
-        font-size: $font-size-paragraph-l;
-    }
-    &.paragraph-s {
-        font-size: $font-size-paragraph-s;
+    &.p4 {
+        font-size: $font-size-p4;
     }
 }
 
 // Buttons
 // ==========================================
-button {
-    &,
-    &.button-m {
-        font-size: $font-size-button-m;
-        line-height: $line-height-buttons;
-        font-weight: $font-weight-semibold;
-        letter-spacing: $letter-spacing-buttons;
-    }
-    &.button-s {
-        font-size: $font-size-button-s;
+button,
+.b1 {
+    font-size: $font-size-b1;
+    line-height: $line-height-buttons;
+    font-weight: $font-weight-semibold;
+    letter-spacing: $letter-spacing-buttons;
+    &.b2 {
+        font-size: $font-size-b2;
     }
 }
 
+
+
+
 // Labels
 // ==========================================
-label {
-    &,
-    &.label-m {
-        font-size: $font-size-label-m;
-        line-height: $line-height-labels;
-        font-weight: $font-weight-semibold;
-        letter-spacing: $letter-spacing-labels;
-    }
-    &.label-s {
-        font-size: $font-size-label-s;
+label,
+.l1 {
+    font-size: $font-size-l1;
+    line-height: $line-height-labels;
+    font-weight: $font-weight-semibold;
+    letter-spacing: $letter-spacing-labels;
+    &.l2 {
+        font-size: $font-size-l2;
     }
 }
