@@ -2,14 +2,16 @@
 $colors: (
     light:(
         background: #fff,
+        background-secondary: #cde7f1,
         text: #2c2c2c,
-        accent: #e60067,
-        secondary: #cde7f1,
+        text-secondary: lighten(#2c2c2c, 25%),
+        accent: #e60067
     ),
     dark: (
         background: #333333,
+        background-secondary: #0f2e3a,
         text: #cccccc,
-        accent: #b4004f,
-        secondary: #0f2e3a
+        text-secondary: lighten(#cccccc, 25%),
+        accent: #b4004f
     )
 );

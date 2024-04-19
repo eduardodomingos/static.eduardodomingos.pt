@@ -3,7 +3,8 @@
 
 .section {
     .section__title {
-        @extend %h6;
+        @extend %p4;
+        font-weight: $font-weight-semibold;
         color: var(--color-accent);
         text-transform: uppercase;
         letter-spacing: .02em;

@@ -2,8 +2,17 @@
 
 .feed {
     @include unlist();
+    >li:not(:last-child) {
+        margin: $space-stack-xl;
+    }
     a {
         color: var(--color-text);
         text-decoration: none;
+    }
+
+    aside & {
+        >li:not(:last-child) {
+            margin: $space-stack-m;
+        }
     }
 }

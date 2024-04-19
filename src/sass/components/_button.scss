@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+%button,
+.button,
+button {
+    @extend %b1;
+    display: inline-block;
+    padding: $space-inset-squish-m;
+}

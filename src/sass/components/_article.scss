@@ -11,8 +11,58 @@
                 @extend %h2;
             }
             .article__title--secondary {
-                @extend %h4;
+                @extend %h5;
                 margin-top: $space-xs;
+                color: var(--color-text-secondary);
+            }
+            .article__lead {
+                margin: $space-stack-m;
+            }
+            .article__read-more {
+                font-weight: $font-weight-bold;
+                display: flex;
+                align-items: center;
+                gap: $space-s;
+                &::after {
+                    font-family: "icons-eduardodomingos";
+                    content: '\e800';
+                    font-weight: $font-weight-regular;
+                    color: var(--color-accent);
+                    position: relative;
+                    left: 0;
+                    transition: left .2s;
+                }
+            }
+            @include attention() {
+                .article__title {
+                    color: var(--color-accent);
+                }
+                .article__read-more::after {
+                    left: $space-xs;
+                }
+            }
+
+            aside & {
+                .article__title {
+                    @extend %h5;
+                    padding-left: $space-l;
+                    position: relative;
+                    &::before {
+                        font-family: "icons-eduardodomingos";
+                        content: '\e800';
+                        font-weight: $font-weight-regular;
+                        color: var(--color-accent);
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        transition: left .2s;
+                    }
+                }
+                @include attention() {
+                    .article__title::before {
+                        left: $space-s;
+                    }
+                }
             }
         }
     }
